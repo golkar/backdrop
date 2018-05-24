@@ -5,7 +5,7 @@
 
 <img  src="https://wwwmpa.mpa-garching.mpg.de/galform/virgo/millennium/poster_large.jpg"  width="320" align="right" />
 
-Backdrop is a tool for introducing stochasticity which intuitively can be thought of as dropout along the backpropagation pipeline. Backdrop can lead to a significant improvement in optimization performance in problems where stochastic gradient descent is not suitable or well defined. Problems of this sort include optimization of loss functions that cannot be decomposed into a sum of individual sample losses (e.g. F measures, area under ROC or any other global performance measure) and problems which have a small number of samples where each sample is information rich and can be intuitively considered as being hierarchically comprised of many smaller subsamples. Examples of the latter include graphs, images, time-series as well as many physics based scenarios. 
+[Backdrop](https://www.dropbox.com/s/wuvzafu1pgihd8f/Backdrop.pdf?dl=0) is a tool for introducing stochasticity which intuitively can be thought of as dropout along the backpropagation pipeline. Backdrop can lead to a significant improvement in optimization performance in problems where stochastic gradient descent is not suitable or well defined. Problems of this sort include optimization of loss functions that cannot be decomposed into a sum of individual sample losses (e.g. F measures, area under ROC or any other global performance measure) and problems which have a small number of samples where each sample is information rich and can be intuitively considered as being hierarchically comprised of many smaller subsamples. Examples of the latter include graphs, images, time-series as well as many physics based scenarios. 
 
 The Millenium Run, a cosmology simulation that traces the evolution of the matter distribution of the Universe, is a demonstrative example of this class of problems. At the largest scale, the image is a web of filaments. As we zoom in, we start seeing more structure, corresponding to the dark matter halos and eventually we see many galaxies inside each halo.  For this class of problems, one would like to take advantage of the many realizations of the objects at the different scales in the problem. 
 
@@ -29,10 +29,10 @@ An example of the masks generated during the backward pass is given in the next 
 
 <hr>
 
-For implementation of backdrop via a masking layer see [backdrop-demo.ipynb](backdrop-demo.ipynb). For a demonstration of the GP dataset generator see [gp-generate-demo.ipynb](gp-generate-demo.ipynb). The dataset used in the paper is [provided on Zenodo](https://zenodo.org/record/1252464#.WwcpbkgvwuU) under dataset.zip. 
+For more details and results regarding performance improvements with backdrop see the paper ([draft](https://www.dropbox.com/s/wuvzafu1pgihd8f/Backdrop.pdf?dl=0)). For implementation of backdrop via a masking layer see [backdrop-demo.ipynb](backdrop-demo.ipynb). For a demonstration of the GP dataset generator see [gp-generate-demo.ipynb](gp-generate-demo.ipynb). The dataset used in the paper is [provided on Zenodo](https://zenodo.org/record/1252464#.WwcpbkgvwuU) under dataset.zip. 
 
 
-For backdrop, please cite using the following BibTex entry:
+For backdrop ([draft](https://www.dropbox.com/s/wuvzafu1pgihd8f/Backdrop.pdf?dl=0)) , please cite using the following BibTex entry:
 
 ```
 @article{golkar2018,
