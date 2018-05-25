@@ -1,21 +1,14 @@
+#-------------------------------------------
+# Source code for backdrop pytorch implementation
+#
+# By:  Siavash Golkar, Kyle Cranmer
+#-------------------------------------------
+
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torch.optim import lr_scheduler
 from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
-import time
-import datetime
-import os
-import copy
-import shutil
-import argparse
-from torch.utils.data import Dataset
-import pickle
-import sys
-from random import shuffle
-import matplotlib.pyplot as plt
 
 
 # ______________________________________________
